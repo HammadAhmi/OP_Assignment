@@ -1,20 +1,107 @@
-﻿/* Set padding to keep content from hitting the edges */
-.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+﻿/* GENERAL STYLES */
+body {
+    background-color: #F8F9FA;
+    font-family: 'Arial', sans-serif;
+    color: #343A40;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+/* NAVBAR */
+.navbar {
+    background-color: #007BFF !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #F8F9FA !important;
+    padding: 10px 15px;
+    transition: background 0.3s, border-radius 0.3s;
+}
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+
+/* BUTTONS */
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #0056B3;
+        transform: scale(1.05);
+    }
+
+/* FOOTER */
+.footer {
+    background-color: #343A40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+    .footer a {
+        color: #F1C40F;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .footer a:hover {
+            color: #FFF;
+        }
+
+/* CARD STYLES */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* FORM INPUT STYLES */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease-in-out;
+}
+
+    .form-control:focus {
+        border-color: #007BFF;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    }
+
+/* BUTTON STYLES */
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+    .btn-primary:hover {
+        background-color: #0056B3;
+        transform: scale(1.05);
+    }
+
+/* FOOTER */
+.card-footer {
+    font-size: 0.9rem;
 }

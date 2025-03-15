@@ -1,19 +1,42 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<div class="container mt-5">
+    <h1 class="text-primary">Contact Us</h1>
+    <p class="lead">Have questions? Reach out to us!</p>
 
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+    <form>
+        <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control rounded-input" placeholder="Enter your name">
+        </div>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
-</main>
+        <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control rounded-input" placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control rounded-input" rows="4" placeholder="Write your message..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg rounded-button">Send Message</button>
+    </form>
+</div>
+
+<style>
+    .rounded-button {
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+        .rounded-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+    .rounded-input {
+        border-radius: 10px;
+    }
+</style>

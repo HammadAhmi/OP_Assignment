@@ -1,9 +1,28 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "About Us";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<div class="container mt-5">
+    <h1 class="text-primary">About Our System</h1>
+    <p class="lead">We provide an efficient order processing system with automated discount calculation.</p>
 
-    <p>Use this area to provide additional information.</p>
-</main>
+    <h3>Why Choose Us?</h3>
+    <ul class="list-group">
+        <li class="list-group-item">🔹 Fast Order Processing</li>
+        <li class="list-group-item">🔹 Smart Discount System</li>
+        <li class="list-group-item">🔹 Modern Web Interface</li>
+    </ul>
+
+    <a href="@Url.Action("Contact", "Home")" class="btn btn-primary btn-lg mt-4 rounded-button">Contact Us</a>
+</div>
+
+<style>
+    .rounded-button {
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+        .rounded-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+</style>

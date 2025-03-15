@@ -1,0 +1,25 @@
+﻿@model OP_Assignment.Models.Order
+@{
+    ViewBag.Title = "Order Summary";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-success text-white text-center">
+                    <h3>Order Summary</h3>
+                </div>
+                <div class="card-body text-center">
+                    <p class="fw-bold fs-5 text-primary">Order Amount: <span class="text-dark">$@Model.OrderAmount</span></p>
+                    <p class="fw-bold fs-5 text-danger">Discount Applied: <span class="text-dark">$@Model.Discount</span></p>
+                    <p class="fw-bold fs-5 text-success">Final Total: <span class="text-dark">$@Model.FinalAmount</span></p>
+                    <a href="@Url.Action("Index", "Order")" class="btn btn-primary mt-3">New Order</a>
+                </div>
+                <div class="card-footer text-center bg-light">
+                    <small class="text-muted">Thank you for your order!</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
